@@ -1,0 +1,147 @@
+html {
+  --bg-color: #100007;
+  --accent-color: #4c0827;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+}
+
+.main-container {
+  background-color: var(--accent-color);
+  width: 30%;
+  min-height: 300px;
+  height: auto;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0px 0px 30px rgba(245, 245, 245, 0.253);
+}
+
+.main-container-blur {
+  background-color: var(--accent-color);
+  width: 30%;
+  min-height: 300px;
+  height: auto;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  border-radius: 10px;
+  align-items: center;
+  filter: blur(4px);
+  box-shadow: 0px 0px 30px rgba(245, 245, 245, 0.253);
+}
+
+#popup {
+  top: 9%;
+  position: absolute;
+  left: 35%;
+  width: 450px;
+  height: 200px;
+  background-color: red;
+  border-radius: 5px;
+  box-shadow: 0px 0px 100px black;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#popupClosed {
+  display: none;
+}
+
+#popup button {
+  width: 100px;
+  height: 50px;
+  border: none;
+}
+
+.time {
+  margin-bottom: 20px;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 2em;
+}
+
+.set-alarm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+form {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.set-alarm-btn {
+  width: 50px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+}
+
+input {
+  background-color: rgba(245, 245, 245, 0.322);
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: right;
+}
+
+p {
+  margin: 20px 0 0 0;
+}
+
+.alarm-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 60px;
+  border-radius: 5px 5px 0 0;
+  justify-content: center;
+  background-color: #38051c;
+}
+
+.delete-btn {
+  margin-left: 20px;
+  background-color: rgba(245, 245, 245, 0.9);
+  border: none;
+  border-radius: 5px;
+}
